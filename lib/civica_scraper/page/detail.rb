@@ -28,6 +28,7 @@ module CivicaScraper
         case stage_description
         when "Notification to Neighbours",
              "Advert-Went/Courier 30 Days",
+             "Notify to Neighbours 30 Days",
              "Notification"
           {
             type: :notification,
