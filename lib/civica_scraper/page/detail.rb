@@ -104,7 +104,8 @@ module CivicaScraper
              "Referred - Aboriginal Council",
              "Referred - Environ. & Sustain",
              "Referred - Environ. & Sustain.",
-             "Referred - Environ. & Sustain"
+             "Referred - Environ. & Sustain",
+             "Referred - Sydney Buses"
 
           { type: :ignored }
         else
