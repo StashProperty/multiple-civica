@@ -99,7 +99,8 @@ module CivicaScraper
              "Refer Planning NSW",
              "Refer Heritage Office",
              "Refer Strategic Planner",
-             "Referred - Waste Services"
+             "Referred - Waste Services",
+             "Referred - Community Services"
 
           { type: :ignored }
         else
