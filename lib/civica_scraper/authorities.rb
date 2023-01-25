@@ -2,37 +2,6 @@
 
 module CivicaScraper
   AUTHORITIES = {
-    vincent: {
-      url: "https://maps.vincent.wa.gov.au/eservice/daEnquiryInit.do?doc_typ=5&nodeNum=8053",
-      period: :last30days
-    },
-    wanneroo: {
-      url: "https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047",
-      period: :last30days,
-      # Because of incomplete certificate chain
-      disable_ssl_certificate_check: true
-    },
-    south_perth: {
-      url: "https://awpe.southperth.wa.gov.au/eservice/daEnquiry/currentlyAdvertised.do?taskNote=Y&nodeNum=7325",
-      period: nil
-    },
-    bunbury: {
-      url: "https://ecouncil.bunbury.wa.gov.au/eservice/daEnquiryInit.do?nodeNum=11264",
-      period: :last30days
-    },
-    whittlesea: {
-      url:
-        "https://eservice.whittlesea.vic.gov.au/eservice/daEnquiryInit.do?doc_typ=5&nodeNum=21161",
-      period: :last30days
-    },
-    dorset: {
-      url: "https://eservices.dorset.tas.gov.au/eservice/daEnquiryInit.do?nodeNum=12238",
-      period: :last30days
-    },
-    bayside: {
-      url: "https://ecouncil.bayside.vic.gov.au/eservice/daEnquiryInit.do?nodeNum=480390",
-      period: :last30days
-    },
     burwood: {
       url: "https://ecouncil.burwood.nsw.gov.au/eservice/daEnquiryInit.do?doc_typ=10&nodeNum=219",
       period: :last7days,
