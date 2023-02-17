@@ -27,6 +27,12 @@ module CivicaScraper
       period: :last30days,
       notice_period: true,
       australian_proxy: true
+    },
+    wanneroo: {
+      url: "https://eservice.wanneroo.wa.gov.au/eservice/daEnquiry.do?nodeNum=8047",
+      period: :last30days,
+      # Because of incomplete certificate chain
+      disable_ssl_certificate_check: true
     }
   }.freeze
 end
