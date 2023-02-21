@@ -2,6 +2,28 @@
 
 module CivicaScraper
   AUTHORITIES = {
+  vincent: {
+        url: "https://eservices.vincent.wa.gov.au/eservice/daEnquiryInit.do?nodeNum=8052&goingBack=true",
+        period: :last30days
+      },
+      dorset: {
+        url: "https://eservices.dorset.tas.gov.au/eservice/daEnquiryInit.do?nodeNum=12238",
+        period: :last30days
+      },
+    burwood: {
+      url: "https://ecouncil.burwood.nsw.gov.au/eservice/daEnquiryInit.do?doc_typ=10&nodeNum=219",
+      period: :last7days,
+      # Looks like they're geoblocking non australian web requests. Sigh.
+      australian_proxy: true
+    },
+    bunbury: {
+      url: "https://ecouncil.bunbury.wa.gov.au/eservice/daEnquiryInit.do?nodeNum=11264",
+      period: :last30days
+    },
+      bayside: {
+        url: "https://ecouncil.bayside.vic.gov.au/eservice/daEnquiryInit.do?nodeNum=480390",
+        period: :last30days
+    },
     nambucca: {
       url:
         "https://eservices.nambucca.nsw.gov.au/eservice/daEnquiryInit.do?doc_typ=10&nodeNum=2811",

@@ -56,6 +56,8 @@ module CivicaScraper
                       Date.today - 10
                     when :last30days
                       Date.today - 30
+                    when :last356days
+                      Date.today - 356
                     else
                       raise "Unexpected period: #{period}"
                     end
